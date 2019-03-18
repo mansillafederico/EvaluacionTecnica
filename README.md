@@ -25,12 +25,14 @@ modifica un pedido existente (en cado de crear uno nuevo, el pedido pasado como
 parámetro se completa con el nuevo id).
 void delete(Pedido pedido): elimina el pedido que corresponde al id recibido.
 Pedido select(Integer idPedido): busca un pedido por id.
+
 2- Suponiendo que la tabla Pedidos tiene muchos registros y columnas (algunas de ellas
 nullable, algunas BLOB / "binary-large-object"), que consideraciones se deberían tener en
 cuenta para realizar desde un sitio web consultas a la base de datos de manera
 eficiente? Discuta performance a nivel motor de base de datos, networking, capa
 aplicativa desde donde se realizan las solicitudes, entre otros aspectos que considere
 relevantes.
+
 3- Implemente en una página HTML con el código javascript correspondiente el formulario
 para guardar un Pedido a través de una invocación AJAX a la URI /pedidos/guardar.
 Aplicar las siguientes validaciones a los campos:
