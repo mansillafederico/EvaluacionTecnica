@@ -1,0 +1,4 @@
+Para optimizar las consultas en la tabla Pedidos lo primero que haría es analizar el Plan de Ejecución Real, me fijaría el porcentaje de tiempo que utiliza
+cada Nodo y trataría de generar consultas con índices para agilizar el recorrido. Por otro cargaría el sitio web y haría las consultas en segundo plano, 
+utlizando AJAX o algún otro código asincrónico. Al igual que en el punto, utilizaría el recurso de almacenar las queries en cache para futuras consultas.
+Habría que ver si es necesario cargar los BLOBs de los registros que se muestren o podemos cargarlos una vez que el usuario seleccione un registro particular.
